@@ -2,12 +2,23 @@ import { defineConfig } from '@rsbuild/core';
 import { pluginReact } from '@rsbuild/plugin-react';
 import { pluginTailwindcss } from '@rsbuild/plugin-tailwindcss';
 
-// Docs: https://rsbuild.rs/config/
 export default defineConfig({
   plugins: [
-    pluginReact({
-      reactCompiler: true,
-    }),
+    pluginReact(),
     pluginTailwindcss(),
   ],
+  source: {
+    alias: {
+      '@': './src',
+      '@app': './src/app',
+      '@features': './src/features',
+      '@shared': './src/shared',
+      '@components': './src/shared/components',
+      '@hooks': './src/shared/hooks',
+      '@lib': './src/shared/lib',
+    },
+  },
+  html: {
+    title: 'Jair Manosalva - Portfolio',
+  },
 });
