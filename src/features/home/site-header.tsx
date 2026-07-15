@@ -32,10 +32,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 md:px-6">
-        <button onClick={(e) => scrollTo('inicio', e)} className="flex size-10 items-center justify-center rounded-md bg-primary" aria-label="Ir al inicio">
-          <img src="portfolio/firma.png" alt="Jair Manosalva" className="h-6 w-auto brightness-0 invert" />
-        </button>
-
+        <img src="portfolio/firma.png" alt="Jair Manosalva" className="h-16 w-auto" />
         <nav aria-label="Navegación principal" className="hidden items-center gap-1 md:flex">
           {navLinks.map((link) => (
             <button key={link.id} onClick={(e) => scrollTo(link.id, e)} className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
