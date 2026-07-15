@@ -22,4 +22,7 @@ export default defineConfig({
     title: 'Jair Manosalva - Portfolio',
     favicon: './public/portfolio/firma.png',
   },
+  output: {
+    assetPrefix: process.env.PUBLIC_URL || '/',
+  },
 });
