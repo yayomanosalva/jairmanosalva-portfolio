@@ -3,10 +3,10 @@ import { Badge } from '@components/ui/badge';
 import { SectionLabel } from './section-label';
 
 const projects = [
-  { title: 'Bidilink Nexus', category: 'React · TypeScript · Bun · RsBuild', image: '/portfolio/bidilink-web.png', href: 'https://bidilink.com/' },
-  { title: 'Vumi Travels', category: 'Angular · Ionic · REST APIs', image: '/portfolio/vumi-travels.png', href: 'https://play.google.com/store/apps/details?id=com.vumiagentcentral&hl=en' },
-  { title: 'Prodesa Web/App', category: 'React ', image: '/portfolio/prodesa-web-app.png', href: 'https://prodesa.com/' },
-  { title: 'Copidrogas Front', category: 'React · RTK - Form', image: '/portfolio/copidrogas-front.png', href: 'https://www.coopidrogas.com.co/sip-enlaces' },
+  { title: 'Bidilink Nexus', category: 'React · TypeScript · Bun · RsBuild', image: 'portfolio/bidilink-web.png', href: 'https://bidilink.com/' },
+  { title: 'Vumi Travels', category: 'Angular · Ionic · REST APIs', image: 'portfolio/vumi-travels.png', href: 'https://play.google.com/store/apps/details?id=com.vumiagentcentral&hl=en' },
+  { title: 'Prodesa Web/App', category: 'React ', image: 'portfolio/prodesa-web-app.png', href: 'https://prodesa.com/' },
+  { title: 'Copidrogas Front', category: 'React · RTK - Form', image: 'portfolio/copidrogas-front.png', href: 'https://www.coopidrogas.com.co/sip-enlaces' },
 ];
 
 export function Projects() {
