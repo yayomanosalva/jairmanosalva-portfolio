@@ -21,8 +21,8 @@ export function Blog() {
           {posts.map((post) => (
             <Card key={post.title} className="group overflow-hidden pt-0">
               <a href={post.href} className="block">
-                <div className="aspect-[16/10] overflow-hidden">
-                  <img src={post.image || '/placeholder.svg'} alt={`Imagen del artículo: ${post.title}`} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <div className="overflow-hidden bg-secondary">
+                  <img src={post.image || '/placeholder.svg'} alt={`Imagen del artículo: ${post.title}`} className="h-full w-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" />
                 </div>
                 <CardContent className="pt-5">
                   <div className="flex items-center gap-2 text-xs font-medium uppercase tracking-wider text-primary">

@@ -3,10 +3,10 @@ import { Badge } from '@components/ui/badge';
 import { SectionLabel } from './section-label';
 
 const projects = [
-  { title: 'Bidilink SaaS Platform', category: 'React · TypeScript · Docker', image: '/portfolio/project-2.png', href: '#' },
-  { title: 'Vumi Travels', category: 'React · REST APIs', image: '/portfolio/project-1.png', href: '#' },
-  { title: 'Prodesa Web/App', category: 'Angular · Ionic', image: '/portfolio/project-3.png', href: '#' },
-  { title: 'Copidrogas Front', category: 'React · E-commerce', image: '/portfolio/project-4.png', href: '#' },
+  { title: 'Bidilink Nexus', category: 'React · TypeScript · Bun · RsBuild', image: '/portfolio/bidilink-web.png', href: 'https://bidilink.com/' },
+  { title: 'Vumi Travels', category: 'Angular · Ionic · REST APIs', image: '/portfolio/vumi-travels.png', href: 'https://play.google.com/store/apps/details?id=com.vumiagentcentral&hl=en' },
+  { title: 'Prodesa Web/App', category: 'React ', image: '/portfolio/prodesa-web-app.png', href: 'https://prodesa.com/' },
+  { title: 'Copidrogas Front', category: 'React · RTK - Form', image: '/portfolio/copidrogas-front.png', href: 'https://www.coopidrogas.com.co/sip-enlaces' },
 ];
 
 export function Projects() {
@@ -23,16 +23,22 @@ export function Projects() {
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2">
           {projects.map((project) => (
-            <a key={project.title} href={project.href} className="group relative overflow-hidden rounded-xl border border-border bg-card">
-              <div className="aspect-[16/10] overflow-hidden">
-                <img src={project.image || '/placeholder.svg'} alt={`Vista previa del proyecto ${project.title}`} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <a key={project.title} href={project.href} target="_blank" rel="noopener noreferrer" className="group relative overflow-hidden rounded-xl border border-border bg-card transition-all hover:-translate-y-0.5 hover:shadow-lg hover:border-primary/30">
+              <div className="aspect-[16/10] overflow-hidden bg-secondary">
+                {project.image ? (
+                  <img src={project.image} alt={`Vista previa del proyecto ${project.title}`} className="h-full w-full object-contain p-2 transition-transform duration-500 group-hover:scale-105" />
+                ) : (
+                  <div className="flex h-full items-center justify-center">
+                    <span className="font-display text-5xl font-bold text-muted-foreground/20">{project.title[0]}</span>
+                  </div>
+                )}
               </div>
               <div className="flex items-center justify-between gap-4 p-5">
-                <div>
+                <div className="min-w-0">
                   <Badge variant="secondary" className="mb-2">{project.category}</Badge>
-                  <h3 className="font-display text-lg font-semibold">{project.title}</h3>
+                  <h3 className="font-display text-lg font-semibold truncate">{project.title}</h3>
                 </div>
-                <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+                <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-all group-hover:bg-primary group-hover:text-primary-foreground group-hover:scale-110">
                   <ArrowUpRight className="size-5" />
                 </span>
               </div>

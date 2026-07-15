@@ -1,6 +1,6 @@
 const socials = [
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/' },
-  { label: 'GitHub', href: 'https://github.com/' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/jair-manosalva-66111541/' },
+  { label: 'GitHub', href: 'https://github.com/yayomanosalva/' },
   { label: 'Email', href: 'mailto:yayomanosalva@gmail.com' },
 ];
 
@@ -14,7 +14,7 @@ export function SiteFooter() {
         </div>
         <nav aria-label="Redes sociales" className="flex items-center gap-5">
           {socials.map((social) => (
-            <a key={social.label} href={social.href} className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">{social.label}</a>
+            <a key={social.label} href={social.href} target="_blank" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">{social.label}</a>
           ))}
         </nav>
       </div>

@@ -3,6 +3,8 @@ import { Hero } from '@features/home/hero';
 import { About } from '@features/home/about';
 import { Services } from '@features/home/services';
 import { Skills } from '@features/home/skills';
+import { Experience } from '@features/home/experience';
+import { Education } from '@features/home/education';
 import { Projects } from '@features/home/projects';
 import { Faq } from '@features/home/faq';
 import { Blog } from '@features/home/blog';
@@ -23,6 +25,8 @@ export default function HomePage() {
         <About />
         <Services />
         <Skills />
+        <Experience />
+        <Education />
         <Projects />
         <Faq />
         <Blog />

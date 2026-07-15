@@ -20,5 +20,6 @@ export default defineConfig({
   },
   html: {
     title: 'Jair Manosalva - Portfolio',
+    favicon: './public/portfolio/firma.png',
   },
 });
