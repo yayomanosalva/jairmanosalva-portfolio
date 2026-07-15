@@ -7,7 +7,7 @@
     "build": "rsbuild build",
     "build-storybook": "storybook build",
     "check": "biome check --write",
-    "deploy": "PUBLIC_URL=/jairmanosalva-portfolio/ rsbuild build && gh-pages -d dist -t",
+    "deploy": "PUBLIC_URL=/jairmanosalva-portfolio/ rsbuild build && gh-pages -d dist --nojekyll",
     "dev": "rsbuild --open",
     "format": "biome format --write",
     "lint": "eslint .",
