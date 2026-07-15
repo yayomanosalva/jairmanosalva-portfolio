@@ -27,9 +27,8 @@ export function Hero() {
 
           <div className="relative">
             <div aria-hidden="true" className="absolute -right-6 top-1/2 size-64 -translate-y-1/2 rounded-full bg-primary/15 blur-3xl md:size-80" />
-            <span aria-hidden="true" className="absolute right-4 top-8 z-10 size-5 rounded-full bg-emerald-400" />
             <div className="relative mx-auto flex aspect-[4/5] max-w-sm items-end justify-center overflow-hidden rounded-t-[2rem] bg-gradient-to-b from-secondary to-card">
-              <img src="/portfolio/hero-portrait.png" alt="Retrato de Jair Manosalva" className="h-full w-full object-cover object-top" />
+              <img src="portfolio/hero-portrait.png" alt="Retrato de Jair Manosalva" className="h-full w-full object-cover object-top" />
             </div>
           </div>
         </div>
