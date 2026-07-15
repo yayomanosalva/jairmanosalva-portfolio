@@ -6,14 +6,15 @@ export function Hero() {
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <div className="grid items-end gap-8 md:grid-cols-2">
           <div className="relative z-10 pb-8">
-            <p className="mb-4 font-mono text-sm uppercase tracking-[0.2em] text-primary">Senior Frontend Developer</p>
+            <p className="mb-4 font-mono text-sm uppercase tracking-[0.2em] text-primary">AI-POWERED SOFTWARE ENGINEER</p>
             <h1 className="font-display text-5xl font-bold leading-[0.95] text-balance md:text-7xl">
               Jair
               <br />
               <span className="text-primary">Manosalva</span>
             </h1>
             <p className="mt-6 max-w-md text-pretty leading-relaxed text-muted-foreground">
-              Radicado en Colombia, con más de 10 años construyendo aplicaciones web escalables con React, Angular y TypeScript. Transformo ideas en productos digitales con código limpio y arquitecturas mantenibles.
+              Desarrollo plataformas web escalables con IA utilizando React, Bun, PostgreSQL y arquitecturas nativas de la nube.
+              Más de 10 años ofreciendo productos mantenibles desde el concepto hasta la producción.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-6">
               <a href="tel:+573008288485" className="flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
@@ -28,7 +29,7 @@ export function Hero() {
           <div className="relative">
             <div aria-hidden="true" className="absolute -right-6 top-1/2 size-64 -translate-y-1/2 rounded-full bg-primary/15 blur-3xl md:size-80" />
             <div className="relative mx-auto flex aspect-[4/5] max-w-sm items-end justify-center overflow-hidden rounded-t-[2rem] bg-gradient-to-b from-secondary to-card">
-              <img src="portfolio/hero-portrait.png" alt="Retrato de Jair Manosalva" className="h-full w-full object-cover object-top" />
+              <img src="portfolio/hero-portrait.png" alt="Retrato de Jair Manosalva" className="h-full w-full object-cover object-top opacity-75" />
             </div>
           </div>
         </div>
